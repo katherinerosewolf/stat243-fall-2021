@@ -358,8 +358,10 @@ x
 charToRaw('Mom\n')      
 writeBin(x, 'tmp.txt')
 readLines('tmp.txt')
-system('ls -l tmp.txt', intern = TRUE)
-system('cat tmp.txt')
+system('ls -l tmp.txt',  # on windows:
+       intern = TRUE)    # shell(cmd = 'wsl ls -l tmp.txt', intern = TRUE)
+system('cat tmp.txt')  # on windows: shell(cmd = 'wsl cat tmp.txt', 
+                       #                   intern = TRUE)
 
 ## @knitr unicode-example
 
@@ -370,10 +372,10 @@ x2
 writeBin(x2, 'tmp2.txt')
 ## here n-tilde and division symbol take up two bytes
 ## but there is an extraneous null byte in there; not sure why
-system('ls -l tmp2.txt') 
+system('ls -l tmp2.txt')  # windows shell(cmd = 'wsl ls -l tmp2.txt', intern = TRUE)
 ## so the system knows how to interpret the UTF-8 encoded file
 ## and represent the Unicode character on the screen:
-system('cat tmp2.txt')
+system('cat tmp2.txt')  # shell(cmd = 'wsl cat tmp2.txt', intern = TRUE)
 
 ## @knitr locale
 Sys.getlocale()
