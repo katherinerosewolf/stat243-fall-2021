@@ -1,5 +1,5 @@
 # stat243-fall-2021
-This repository holds course materials for the fall 2021 offering of Statistics 243 at UC Berkeley.
+This repository holds course materials for the Fall 2021 offering of Statistics 243 at UC Berkeley.
 
 If you would like to audit the class, enroll as a UC Berkeley undergraduate, or enroll as a concurrent enrollment student (i.e., for visiting students), or for some other reason are not enrolled, please fill out [this survey](https://forms.gle/8mDrVJ6XufaTMCPm9) as soon as possible. All those enrolled or wishing to take the class should have filled it out by Friday August 27 at noon.
 
@@ -26,7 +26,7 @@ Instructor office hours:
      - generally available immediately after class
      - feel free to schedule an appointment or drop by if my door is open
    - Andrew:
-     - Tuesdays at 5 pm (location TBD or Zoom (see Piazza post))
+     - Tuesdays at 5 pm (Evans 444 or Zoom (see Piazza post))
      - Fridays during unused section time, generally 1-2 pm and 3-3:30 pm (Evans 443)
 
 ## Software
