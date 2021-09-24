@@ -849,13 +849,14 @@ f <- function(){
 
 ## @knitr lazy-eval, eval=FALSE
 f <- function(a, b = d) {
-	d <- log(a); 
+	d <- a*3; 
 	return(a*b)
 }
-f(7)
+
+f(5)
 
 d <- 100
-f(7)
+f(5)
                                            
 
 ## @knitr lazy-eval2
