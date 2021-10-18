@@ -2028,7 +2028,15 @@ Simply start R as you usually would.
 \end_layout
 
 \begin_layout Standard
-Here we'll use foreach with the future-based doFuture backend.
+Here we'll use 
+\emph on
+foreach
+\emph default
+ with the future-based 
+\emph on
+doFuture
+\emph default
+ backend.
 \end_layout
 
 \begin_layout Standard
@@ -2051,7 +2059,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-To use future_lapply, set up the plan in similar fashion to above.
+To use 
+\emph on
+future_lapply
+\emph default
+, set up the plan in similar fashion to above.
  You can then do:
 \end_layout
 
@@ -2186,8 +2198,27 @@ status open
 \end_layout
 
 \begin_layout Standard
-Parallelizing across nodes requires copying any big data across machines
- (one can't fork processes across nodes), which will be slow.
+And here is code you can use to demonstrate that when using multicore, no
+ copies are made.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<<parallel-nocopy-check, eval=FALSE>>=
+\end_layout
+
+\begin_layout Plain Layout
+
+@
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
