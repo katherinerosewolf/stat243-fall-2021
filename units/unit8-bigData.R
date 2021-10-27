@@ -1,13 +1,13 @@
 ############################################################
 ### Demo code for Unit 8 of Stat243, "Databases and Big Data"
-### Chris Paciorek, October 2020
+### Chris Paciorek, October 2021
 ############################################################
 
 #####################################################
 # 2: MapReduce, Dask, Spark, and Hadoop
 #####################################################
 
-### 2.3.14 sparklyr example
+### 2.3.13 sparklyr example
 
 ## @knitr sparklyr
 
@@ -143,7 +143,7 @@ dbDisconnect(db)
 
 ## find the largest viewcounts in the questions table
 dbGetQuery(db,
-'select distinct viewcount from questions order by viewcount desc limit 10')
+'select title, viewcount from questions order by viewcount desc limit 10')
 ## now get the questions that are viewed the most
 dbGetQuery(db, 'select * from questions where viewcount > 100000')
 
